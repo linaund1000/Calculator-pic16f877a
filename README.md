@@ -8,9 +8,8 @@ xc8-cc -mcpu=16f877a -O1 -o calculator789.hex main789.c
 
 ## Hardware
 - PIC16F877A microcontroller
-- 16x2 LCD (HD44780)
+- 16x2 LCD (LM016L)
 - 4x4 matrix keypad
-- Power supply 5V
 
 
 ## Memory Usage
