@@ -95,10 +95,10 @@ void lcd_number(long num) {
 
 unsigned char scan_keypad(void) {
     unsigned char keys[4][4] = {
-        {7, 8, 9, 15},   // 1,2,3,+ 
-        {4, 5, 6, 12},   // 4,5,6,-
-        {1, 2, 3, 11},   // 7,8,9,*
-        {13, 0, 14, 10}  // C,0,=,/ (15 is division)
+        {7, 8, 9, 15},   // 7,8,9,/ (15 is division)
+        {4, 5, 6, 12},   // 4,5,6,* ()
+        {1, 2, 3, 11},   // 1,2,3,-
+        {13, 0, 14, 10}  // C,0,=,+
     };
     
     for(unsigned char row = 0; row < 4; row++) {
