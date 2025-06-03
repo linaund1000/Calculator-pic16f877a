@@ -1,16 +1,18 @@
-**to compile in terminal ->
-    xc8-cc -mcpu=16f877a -O1 -o calculator789.hex main789.c
+# PIC16F877A Calculator
+
+## Compile
+```bash
+xc8-cc -mcpu=16f877a -O1 -o calculator789.hex main789.c
+```
 
 
-**result ->
-  main.c:180:: warning: (765) degenerate unsigned comparison
-  main.c:190:: warning: (765) degenerate unsigned comparison
-  main.c:236:: warning: (765) degenerate unsigned comparison
-  main.c:251:: warning: (765) degenerate unsigned comparison
-  
-  16F877A Memory Summary:
-      Program space        used   BF6h (  3062) of  2000h words   ( 37.4%)
-      Data space           used    69h (   105) of   170h bytes   ( 28.5%)
-      EEPROM space         used     0h (     0) of   100h bytes   (  0.0%)
-      Configuration bits   used     1h (     1) of     1h word    (100.0%)
-      ID Location space    used     0h (     0) of     4h bytes   (  0.0%)
+## Hardware
+- PIC16F877A microcontroller
+- 16x2 LCD (HD44780)
+- 4x4 matrix keypad
+- Power supply 5V
+
+
+## Memory Usage
+- Program: 37.4% (3062/8192 words)
+- RAM: 28.5% (105/368 bytes)
